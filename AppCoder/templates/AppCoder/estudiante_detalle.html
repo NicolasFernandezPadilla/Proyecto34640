@@ -1,0 +1,15 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">DATOS DE ESTUDIANTE</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+<p>NOMBRE: <i>{{ object.nombre }}</i></p>
+<p>APELLIDO: <i>{{ object.apellido }}</i></p>
+<p>EMAIL: <i>{{ object.email }}</i></p>
+
+{% endblock %}
